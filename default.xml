@@ -31,8 +31,10 @@
   <project path="hardware/amlogic/wifi" name="hardware_amlogic_wifi" revision="master" remote="peyo"/>
   <project path="device/aml/odrc" name="device_aml_odrc" revision="marshmallow" remote="peyo"/>
 
+  <remove-project name="device/huawei/angler-kernel" />
   <remove-project name="device/asus/flo-kernel" />
   <remove-project name="device/asus/fugu-kernel" />
+  <remove-project name="device/lge/bullhead-kernel" />
   <remove-project name="device/lge/hammerhead-kernel" />
   <remove-project name="device/moto/shamu-kernel" />
   <remove-project name="device/htc/flounder-kernel" />
