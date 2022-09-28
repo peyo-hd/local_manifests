@@ -100,8 +100,6 @@
   <project path="packages/modules/common" name="packages_modules_common" revision="riscv64-android-12.0.0_dev" remote="arv"/>
   <remove-project name="platform/packages/modules/DnsResolver"/>
   <project path="packages/modules/DnsResolver" name="packages_modules_DnsResolver" revision="riscv64-android-12.0.0_dev" remote="arv"/>
-  <remove-project name="platform/packages/modules/NeuralNetworks"/>
-  <project path="packages/modules/NeuralNetworks" name="packages_modules_NeuralNetworks" revision="riscv64-android-12.0.0_dev" remote="arv"/>
   <remove-project name="platform/packages/services/Car"/>
   <project path="packages/services/Car" name="packages_services_Car" revision="riscv64-android-12.0.0_dev" remote="arv"/>
 
@@ -128,8 +126,6 @@
   <remove-project name="platform/system/unwinding"/>
   <project path="system/unwinding" name="system_unwinding" revision="riscv64-android-12.0.0_dev" remote="arv"/>
 
-  <remove-project name="platform/test/mlts/benchmark"/>
-  <project path="test/mlts/benchmark" name="test_mlts_benchmark" revision="riscv64-android-12.0.0_dev" remote="arv"/>
   <remove-project name="platform/test/vts"/>
   <project path="test/vts" name="test_vts" revision="riscv64-android-12.0.0_dev" remote="arv"/>
   <remove-project name="platform/test/vts-testcase/hal"/>
@@ -209,6 +205,12 @@
   <project path="external/libdrm" name="platform/external/libdrm" revision="android13-release"/>
   <remove-project name="platform/external/minijail"/>
   <project path="external/minijail" name="external_minijail" revision="arv-12" remote="arv"/>
+
+  <remove-project name="platform/packages/modules/NeuralNetworks"/>
+  <project path="packages/modules/NeuralNetworks" name="packages_modules_NeuralNetworks" revision="arv-12" remote="arv"/>
+  <remove-project name="platform/test/mlts/benchmark"/>
+  <project path="test/mlts/benchmark" name="test_mlts_benchmark" revision="arv-12" remote="arv"/>
+
   
   <project path="hardware/arv" name="hardware_arv" revision="arv-12" remote="arv"/>
   <project path="device/arv/jh7100" name="device_arv_jh7100" revision="arv-12" remote="arv"/>
