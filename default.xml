@@ -208,8 +208,13 @@
 
   <remove-project name="platform/packages/modules/NeuralNetworks"/>
   <project path="packages/modules/NeuralNetworks" name="packages_modules_NeuralNetworks" revision="arv-12" remote="arv"/>
+
+
+  <remote name="peyo" fetch="ssh://git@github.com/peyo-hd"/>
+  
   <remove-project name="platform/test/mlts/benchmark"/>
-  <project path="test/mlts/benchmark" name="test_mlts_benchmark" revision="arv-12" remote="arv"/>
+  <project path="test/mlts/benchmark" name="test_mlts_benchmark" revision="tiny" remote="peyo"/>
+  <project path="test/mlts/models_tiny" name="test_mlts_models_tiny" revision="tiny" remote="peyo"/>
 
   
   <project path="hardware/arv" name="hardware_arv" revision="arv-12" remote="arv"/>
