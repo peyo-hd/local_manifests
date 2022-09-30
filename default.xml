@@ -8,6 +8,9 @@
   <remove-project name="platform/external/mesa3d"/>
   <project path="external/mesa3d" name="external_mesa3d" revision="v3d-22.2" remote="arpi"/>
 
+  <remove-project name="platform/external/libusb"/>
+  <project path="external/libusb" name="platform/external/libusb" revision="android11-release"/>  
+
   <remove-project name="platform/build"/>
   <project path="build/make" name="build_make" revision="arpi-13" remote="arpi">
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
@@ -19,7 +22,8 @@
   </project>  
 
   <project path="hardware/arpi" name="hardware_arpi" revision="arpi-12" remote="arpi"/>
-  <project path="device/arpi/rpi4" name="device_arpi_rpi4" revision="arpi-13" remote="arpi"/>
+  <project path="hardware/intel/nn-hal" name="hardware_intel_nn-hal" revision="arpi-13" remote="arpi"/>  
+  <project path="device/arpi/rpi4" name="device_arpi_rpi4" revision="arpi-13-ncs" remote="arpi"/>
 
   <project path="vendor/arpi/RpLauncher" name="RpLauncher" revision="arpi-12" remote="arpi"/>
 </manifest>
