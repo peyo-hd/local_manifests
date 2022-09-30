@@ -216,9 +216,12 @@
   <project path="test/mlts/benchmark" name="test_mlts_benchmark" revision="tiny" remote="peyo"/>
   <project path="test/mlts/models_tiny" name="test_mlts_models_tiny" revision="tiny" remote="peyo"/>
 
+  <remove-project name="platform/external/libusb"/>
+  <project path="external/libusb" name="platform/external/libusb" revision="android11-release"/>
+  <project path="hardware/intel/nn-hal" name="hardware_intel_nn-hal" revision="arpi-13" remote="peyo"/>
   
   <project path="hardware/arv" name="hardware_arv" revision="arv-12" remote="arv"/>
-  <project path="device/arv/jh7100" name="device_arv_jh7100" revision="arv-12" remote="arv"/>
+  <project path="device/arv/jh7100" name="device_arv_jh7100" revision="arv-12-ncs" remote="peyo"/>
 
   <project path="vendor/arpi/RpLauncher" name="RpLauncher" revision="arpi-12" remote="arv"/>
 </manifest>
