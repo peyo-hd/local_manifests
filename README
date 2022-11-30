@@ -1,8 +1,8 @@
 # Download Android source with local_manifests
  Refer to http://source.android.com/source/downloading.html
 
- $ repo init -u https://android.googlesource.com/platform/manifest -b android-13.0.0_r15
- $ git clone https://github.com/android-rpi/local_manifests .repo/local_manifests -b arpi-13
+ $ repo init -u https://android.googlesource.com/platform/manifest -b master
+ $ git clone https://github.com/android-rpi/local_manifests .repo/local_manifests -b arpi-master
  $ repo sync
 
 # Build for Raspberry Pi 4
