@@ -14,12 +14,9 @@
   <project path="external/alsa-utils" name="raspberry-vanilla/android_external_alsa-utils" remote="github" revision="android-13.0" />
 
   <!-- Bluetooth -->
-  <remove-project name="platform/hardware/interfaces" />
   <project path="hardware/interfaces" name="raspberry-vanilla/android_hardware_interfaces" remote="github" revision="android-13.0" />
 
   <!-- Build -->
-  <remove-project name="platform/build" />
-  <remove-project name="platform/build/soong" />
   <project path="build/make" name="raspberry-vanilla/android_build" remote="github" revision="android-13.0" >
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
@@ -45,21 +42,15 @@
   <project path="external/libudev-zero" name="raspberry-vanilla/android_external_libudev-zero" remote="github" revision="android-13.0" />
 
   <!-- Graphics -->
-  <remove-project name="platform/external/drm_hwcomposer" />
-  <remove-project name="platform/external/libdrm" />
-  <remove-project name="platform/external/mesa3d" />
-  <remove-project name="platform/external/minigbm" />
   <project path="external/drm_hwcomposer" name="raspberry-vanilla/android_external_drm_hwcomposer" remote="github" revision="android-13.0" />
   <project path="external/libdrm" name="raspberry-vanilla/android_external_libdrm" remote="github" revision="android-13.0" />
   <project path="external/mesa3d" name="raspberry-vanilla/android_external_mesa3d" remote="github" revision="android-13.0" />
   <project path="external/minigbm" name="raspberry-vanilla/android_external_minigbm" remote="github" revision="android-13.0" />
 
   <!-- v4l2_codec2 -->
-  <remove-project name="platform/external/v4l2_codec2" />
   <project path="external/v4l2_codec2" name="raspberry-vanilla/android_external_v4l2_codec2" remote="github" revision="android-13.0" />
 
   <!-- Wifi -->
-  <remove-project name="platform/packages/modules/Wifi" />
   <project path="packages/modules/Wifi" name="raspberry-vanilla/android_packages_modules_Wifi" remote="github" revision="android-13.0" />
 
 </manifest>
