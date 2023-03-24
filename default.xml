@@ -5,7 +5,7 @@
   <remove-project name="platform/frameworks/av"/>
   <project path="frameworks/av" name="frameworks_av" revision="arpi-13" remote="arpi"/>
   <remove-project name="platform/external/mesa3d"/>
-  <project path="external/mesa3d" name="external_mesa3d" revision="v3d-22.2" remote="arpi"/>
+  <project path="external/mesa3d" name="external_mesa3d" revision="mt8173" remote="arpi"/>
   <remove-project name="platform/external/v4l2_codec2"/>
   <project path="external/v4l2_codec2" name="external_v4l2_codec2" revision="arpi-13" remote="arpi"/>
 
@@ -17,7 +17,7 @@
     <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
     <linkfile src="target" dest="build/target" />
     <linkfile src="tools" dest="build/tools" />
-  </project>  
+  </project>
 
   <remove-project name="platform/hardware/broadcom/libbt"/>
   <project path="hardware/broadcom/libbt" name="hardware_broadcom_libbt" revision="arpi-13" remote="arpi"/>
@@ -28,4 +28,13 @@
   <project path="device/arpi/rpi4" name="device_arpi_rpi4" revision="arpi-13" remote="arpi"/>
 
   <project path="vendor/arpi/RpLauncher" name="RpLauncher" revision="arpi-12" remote="arpi"/>
+
+
+  <remote name="apvr" fetch="ssh://git@github.com/android-pvr"/>
+  <remove-project name="platform/external/swiftshader"/>
+  <project path="external/swiftshader" name="external_swiftshader" revision="arpi-13-swiftshader" remote="apvr"/>
+  <remove-project name="platform/packages/apps/TvSettings"/>
+  <project path="packages/apps/TvSettings" name="packages_apps_TvSettings" revision="apvr-13" remote="apvr"/>
+  <project path="hardware/apvr" name="hardware_apvr" revision="apvr-13" remote="apvr"/>
+  <project path="device/apvr/mt8173" name="device_apvr_mt8173" revision="apvr-13" remote="apvr"/>
 </manifest>
