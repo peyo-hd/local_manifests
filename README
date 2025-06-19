@@ -1,8 +1,8 @@
 # Download Android source with local_manifests
  Refer to http://source.android.com/source/downloading.html
 
- $ repo init -u https://android.googlesource.com/platform/manifest --depth=1 -b android-14.0.0_r37
- $ git clone https://github.com/android-rpi/local_manifests .repo/local_manifests -b arpi-14
+ $ repo init -u https://android.googlesource.com/platform/manifest -b android-15.0.0_r36
+ $ git clone https://github.com/peyo-hd/local_manifests .repo/local_manifests -b arpi-15
  $ repo sync
 
 # Build for Raspberry Pi 5
